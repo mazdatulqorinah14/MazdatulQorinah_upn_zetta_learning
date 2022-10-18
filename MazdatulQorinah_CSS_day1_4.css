@@ -61,8 +61,32 @@ p {
 }
 h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2;
     font-weight: bold;
-    color: black;
+    color:crimson;
+}
+.tabel{
+    width: 800px;
+    height: 520px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee'  
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border : 1px solid black;
+}
+th,td{
+    padding: 10px;
+}
+th {
+    background-color:blueviolet;
+    color: white;
 }
