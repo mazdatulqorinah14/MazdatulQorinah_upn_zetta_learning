@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    background-color: white;
+    padding: 6px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
+.card img{
+    height: 200px;
+    width:200px;
+}
+body{
+    background-color:blueviolet;
+    text-align:center;
+}
+.card-row{
+    width: 100%;
+    margin:0 5px;
+
+}
+.card-column{
+    width: 25%;
+    float: left;
+    padding: 0 16px;
+}
+.card{
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.8s;
+}
+.card:hover{
+    background-color:darkorchid ;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 600px){
+    .card-column{
+        width: 100%;
+        display: block;
+        margin-bottom:25px;
+    }
+}
