@@ -1,3 +1,4 @@
+
 body{
     margin: 30px 0 0;
     padding: 0;
@@ -6,10 +7,6 @@ body{
     justify-content:center;
     align-items:center;
     background-color:darkcyan;
-}
- h1{
-    text-align: center;
-    color:aliceblue;
 }
 .container{
     padding:0;
@@ -97,7 +94,7 @@ body{
 }
 @media screen and (min-width: 900px) {
     .card {
-        grid-column: span 4;
+        grid-column: span 1;
     }
        
 }
