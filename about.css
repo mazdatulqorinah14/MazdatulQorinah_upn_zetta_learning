@@ -3,50 +3,35 @@ header, section, footer, aside, nav, article, figure, figcaption{
 }
 
 body{
-    color:blueviolet;
-    background-color: cornflowerblue;
+    color:black;
+    background-color: cornflowerblue; 
     background-position: center;
-    font-family: georgia, Times. serif;
+    font-family: georgia, Times, serif;
     line-height: 1.4em;
     margin: 0px;
 }
 .about{
     width: 940px;
+    height:2800px;
     margin: 20px auto 20px auto;
     border: 2px solid #00000000;
     background-color: #ffffffff;
 }
 header{
-    height: 160px;
-    background-color:black;
+    height: 180px;
+    /* background-color:black; */
+    background:url(bg2.jpg);
 }
 h1{
-    text-indent: -9999px;
+    
     width: 940px;
     height: 130px;
     margin: 0px;
+    color: black;
+    text-align: center;
+    padding-top: 60px;
 }
-nav.footer{
-    clear: both;
-    color: #ffffffff;
-    background-color: black;
-    height: 30px;
-}
-nav ul{
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
 
-}
-nav li{
-    display: inline;
-    margin-right: 40px;
-}
-nav li a{
-    color: white;
-}
-nav li a:hover, nav li a.current{
-    color:black;
-}
 section.courses{
     float: left;
     width: 659px;
@@ -59,8 +44,69 @@ article{
 }
 hgroup{
     margin-top: 40px;
-    width: 290px;
+    /* width: 290px;
     height:250px;
-    padding 5px;
-    border: 1px xolid white;
+    padding: 5px;
+    border: 1px xolid white; */
+}
+figure{
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin:20px;
+    border: 1px;
+}
+figcaption{
+    font-size: 90%;
+    text-align: left;
+}
+aside{
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+aside section{
+    display: block;
+    padding:10px;
+    border-bottom: 1px solid #eeeeee;
+}
+aside scrtion a:hover{
+    color: red;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-weight: normal;
+}
+h2{
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+}
+h3{
+    margin: 0px 0px 10px 0px;
+}
+img{
+    width: 80%;
+    height: 200px;
+}
+.button{
+    
+    text-align: center;
+    margin:0 auto;
+    padding: 0%;
+    width: 250px;
+    height: 600px;
+    
+}
+.btn{
+    background:rgb(0, 137, 161);
+    color:white;
+    width: 200px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow:0 0 10px rgb(0, 0, 0, 0.1);
+    
 }

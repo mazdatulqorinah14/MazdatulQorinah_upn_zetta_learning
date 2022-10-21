@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
-    background-color:firebrick;
+    background-color:darkcyan;
 }
  h1{
     text-align: center;
@@ -108,13 +108,13 @@ body{
     }
 }
 .button{
-    /* box-shadow: 0 2px 0px 0 white; */
+    
     text-align: center;
     margin:0 auto;
     padding: 0%;
     width: 250px;
     height: 600px;
-    /* background-color: antiquewhite; */
+    
 }
 .btn{
     background:rgb(0, 137, 161);
