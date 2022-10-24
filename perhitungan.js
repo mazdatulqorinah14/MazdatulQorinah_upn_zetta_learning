@@ -6,7 +6,7 @@ function calculatorHargaBuku(buku, diskon, pajak){
         const hargaSetelahDiskon = harga - totalDiskon;
         const jumlahPajak = hargaSetelahDiskon * (pajak/100);
         const hargaSetelahPajak = hargaSetelahDiskon + jumlahPajak;
-        // result += priceAfterTax;
+        
 
         console.group();
         console.log("judul buku : ", buku.title);
