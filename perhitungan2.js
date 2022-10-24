@@ -40,5 +40,5 @@ function calculatorHargaBuku(buku, diskon, pajak, stok, order){
     }   
 }
 
-calculatorHargaBuku({title: "buku matahari", harga:15000, publicity: true}, 50, 10, 10, 9);
-calculatorHargaBuku({title: "buku hujan", harga:10000, publicity: false}, 50, 10, 10, 9);
+calculatorHargaBuku({title: "buku matahari", harga:15000 }, 50, 10, 10, 9);
+calculatorHargaBuku({title: "buku hujan", harga:10000 }, 50, 10, 10, 9);
