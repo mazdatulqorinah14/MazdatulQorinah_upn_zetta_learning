@@ -6,7 +6,7 @@ body{
     color:blueviolet;
     background-color: cornflowerblue;
     background-position: center;
-    font-family: georgia, Times. serif;
+    font-family: georgia, Times, serif;
     line-height: 1.4em;
     margin: 0px;
 }
@@ -61,6 +61,6 @@ hgroup{
     margin-top: 40px;
     width: 290px;
     height:250px;
-    padding 5px;
+    padding: 5px;
     border: 1px xolid white;
 }
