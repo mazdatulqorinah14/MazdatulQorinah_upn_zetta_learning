@@ -7,4 +7,4 @@ function pemisah(text: string, index1: number, index2: number): string{
     return hasil;
 }
 
-console.log(pemisah("Learnin typescript is different than javascript", 9, 19));
+console.log(pemisah("Learning typescript is different than javascript", 9, 19));
