@@ -1,10 +1,10 @@
-function Slicer(text, first_index, last_index){
+function pemisah(text, index1, index2){
     var hasil = "";
-    for (var i = first_index; i < last_index; i++) {
+    for (var i = index1; i < index2; i++) {
         hasil += text[i];
     }
     return hasil;
 
 }
-console.log(Slicer("Learnin typescript is different than javascript", 9, 19));
+console.log(pemisah("Learnin typescript is different than javascript", 9, 19));
  
