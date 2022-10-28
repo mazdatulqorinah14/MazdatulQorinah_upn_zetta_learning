@@ -1,10 +1,13 @@
-function pemisah(text: string, index1: number, index2: number): string{
-    let hasil: string = "";
-
-    for (let i = index1; i < index2; i++) {
-        hasil += text[i];
-    }
-    return hasil;
+type Combinable = (number | string) []
+function gabungan(text: Combinable): string{
+    let result: string = '';
+    text.map((text, index) => {
+        result +=  (index ? ' ' : '') + text;
+    });
+    return result;
 }
+const text1 = [1, 'data', '3', 'result'];
+const text2 = ['bejo', 'has', '4', 'sport', 'car'];
 
-console.log(pemisah("Learning typescript is different than javascript", 9, 19));
+console.log(gabungan(text1));
+console.log(gabungan(text2));
