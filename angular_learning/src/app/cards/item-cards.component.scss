@@ -1,9 +1,14 @@
-.flex-container{
+.row{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
   }
-  .row{
+  .card{
+    margin: 100px 10px 0px 10px;
+  }
+  p{
+    text-align: center;
+  }
+  .flex-container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
