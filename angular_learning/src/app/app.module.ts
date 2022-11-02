@@ -1,20 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { KasirComponent } from './kasir/kasir/kasir.component';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { InputTaskComponent } from './input-task/input-task.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    KasirComponent
-    
-   
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [AppComponent, TasksComponent, InputTaskComponent],
+   imports: [BrowserModule, FormsModule],
+   providers: [],
+   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
