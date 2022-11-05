@@ -15,12 +15,12 @@ export class KasirComponent implements OnInit {
   }
   
   public items: item[] = [
-    {id: 1, name: 'Arcana Phantom Assasin', price: 380000},
-    {id: 2, name: 'Arcana Shadow Fiend', price: 350000},
-    {id: 3, name: 'Arcana Monkey King', price: 340000},
-    {id: 4, name: 'Arcana Terrorblade', price: 325000},
-    {id: 5, name: 'Arcana Lina', price: 300000},
-    {id: 6, name: 'Arcana Pudge', price: 330000},
+    {id: 1, name: 'Keset', price: 2500},
+    {id: 2, name: 'Lemari', price: 450000},
+    {id: 3, name: 'Meja', price: 250000},
+    {id: 4, name: 'kursi', price: 100000},
+    {id: 5, name: 'Keranjang baju', price: 20000},
+    {id: 6, name: 'rak piring', price: 100000},
   ]
 
   public selectedItems: selecteditem[]=[];
