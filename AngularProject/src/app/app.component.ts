@@ -1,31 +1,30 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { LoggingService } from './logging.service';
+import { ItemsService } from './items.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [LoggingService, ItemsService],
 })
-export class AppComponent {
-  accounts = [
-    {
-      name: 'Master Account',
-      status: 'active'
-    },
-    {
-      name: 'Testaccount',
-      status: 'inactive'
-    },
-    {
-      name: 'Hidden Account',
-      status: 'unknown'
-    }
-  ];
-
-  onAccountAdded(newAccount: {name: string, status: string}) {
-    this.accounts.push(newAccount);
+export class AppComponent implements OnInit {
+  title = 'AngularProject';
+  itemList: { itemName: string; itemStatus: string }[] = [];
+  constructor(
+    private itemService: ItemsService,
+    private loggingService: LoggingService
+  ) {}
+  updateStatus(index: number) {
+    this.itemService.updateStatus(index);
+    this.loggingService.logStatusChange(this.itemList[index].itemStatus);
   }
-
-  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
-    this.accounts[updateInfo.id].status = updateInfo.newStatus;
+  changeAllStatus(status: string) {
+    this.itemService.changeAllStatus(status);
+  }
+  ngOnInit(): void {
+    this.itemList = this.itemService.itemList;
+  }
+  destroyItem(index: number) {
+    this.itemService.destroyItem(index);
   }
 }
