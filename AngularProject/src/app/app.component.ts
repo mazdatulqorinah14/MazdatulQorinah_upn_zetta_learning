@@ -1,30 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { LoggingService } from './logging.service';
-import { ItemsService } from './items.service';
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  providers: [LoggingService, ItemsService],
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'angular_learning';
-  itemList: { itemName: string; itemStatus: string }[] = [];
-  constructor(
-    private itemService: ItemsService,
-    private loggingService: LoggingService
-  ) {}
-  updateStatus(index: number) {
-    this.itemService.updateStatus(index);
-    this.loggingService.logStatusChange(this.itemList[index].itemStatus);
+export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
   }
-  changeAllStatus(status: string) {
-    this.itemService.changeAllStatus(status);
+  accounts = [
+    {
+      name: 'Master Account',
+      status: 'active'
+    },
+    {
+      name: 'Testaccount',
+      status: 'inactive'
+    },
+    {
+      name: 'Hidden Account',
+      status: 'unknown'
+    }
+  ];
+
+  onAccountAdded(newAccount: {name: string, status: string}) {
+    this.accounts.push(newAccount);
   }
-  ngOnInit(): void {
-    this.itemList = this.itemService.itemList;
-  }
-  destroyItem(index: number) {
-    this.itemService.destroyItem(index);
+
+  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
+    this.accounts[updateInfo.id].status = updateInfo.newStatus;
   }
 }
