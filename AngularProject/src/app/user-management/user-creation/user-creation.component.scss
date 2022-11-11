@@ -6,7 +6,7 @@
     width: 70%;
     justify-content: center;
     align-items: center;
-    border: 1px solid #191919;
+    border: 1px solid #191919 ;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -19,8 +19,8 @@
 }
 
 .btn-back {
-    color: #E7F6F2;
-    background-color: #080808;
+    color: black;
+    background-color: #c8f500;
 }
 
 .btn-back:hover {
@@ -66,15 +66,15 @@ li{
 .sbm{
     width: 600px;
     margin-top: 20px;
-    background-color: #080808;
-    color: #E7F6F2;
+    background-color: #c8f500;
+    color: black;
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
 }
 
 .sbm:hover {
-    background-color: #080808;
+    background-color: #c8f500;
     transform: scale(1.02)
 }
 

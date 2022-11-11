@@ -19,12 +19,12 @@
 }
 
 .btn-back {
-    color: #E7F6F2;
-    background-color: #395B64;
+    color: black;
+    background-color: #c8f500;
 }
 
 .btn-back:hover {
-    background-color: #29768d;
+    background-color: #c8f500;
     transform: scale(1.02)
 }
 
@@ -66,7 +66,7 @@ li{
 .sbm{
     width: 600px;
     margin-top: 20px;
-    background-color: #395B64;
+    background-color: #c8f500;
     color: #E7F6F2;
     border-radius: 20px;
     font-weight: bold;
@@ -74,7 +74,7 @@ li{
 }
 
 .sbm:hover {
-    background-color: #29768d;
+    background-color: #c8f500;
     transform: scale(1.02)
 }
 
@@ -95,5 +95,5 @@ li{
 .idd{
     font-weight: semibold;
     font-size: 20px;
-    color: #395B64;
+    color: #c8f500;
 }
