@@ -1,13 +1,14 @@
+import { DataServiceService } from './../../service/data-service.service';
 import { Component, OnInit } from '@angular/core';
-import { DataServiceService } from './service/data-service.service';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'angular_learning';
+export class TableComponent implements OnInit {
+
   dataSource: any;
   keyfilter: any = '';
   key: any;
